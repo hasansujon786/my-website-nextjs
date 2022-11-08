@@ -3,10 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
     "next": "latest",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
