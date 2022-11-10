@@ -1,5 +1,6 @@
-// import { Icon } from 'astro-icon'
+import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import SectionTag from '../atoms/SectionTag'
+import ProjectLink from '../atoms/ProjectLink'
 
 const Project = (props: {}) => {
   return (
@@ -20,14 +21,9 @@ const Project = (props: {}) => {
             <p className='text-base text-zinc-600'>typescript</p>
             <p className='text-base text-zinc-600'>express</p>
           </div>
-          <div className='pt-5'>
-            <a
-              className='inline-flex space-x-2 text-sm text-zinc-300 decoration-zinc-500 hover:text-yellow-500 hover:decoration-yellow-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200'
-              href='#'
-            >
-              <span>View on Play Store</span>
-              {/* <Icon name='heroicons-outline:arrow-narrow-right' className='w-5 h-5 mt-0.5 text-current' /> */}
-            </a>
+          <div className='pt-5 space-x-5'>
+            <ProjectLink icon={<FiGithub />}>View Source</ProjectLink>
+            <ProjectLink icon={<FiExternalLink />}>View on Play Store</ProjectLink>
           </div>
         </div>
       </section>

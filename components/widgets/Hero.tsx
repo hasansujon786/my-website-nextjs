@@ -1,31 +1,42 @@
+import GradientBtn from '../atoms/GradientBtn'
 import SectionTag from '../atoms/SectionTag'
+import Socials from './Socials'
+
+const GradientText = (props: {}) => {
+  return (
+    <div className=''>
+      <h1 className='gradient-text text-8xl uppercase font-bold leading-[.80] tracking-tighter'>
+        Hasan <br /> Mahmud
+      </h1>
+    </div>
+  )
+}
 
 const Hero = (props: {}) => {
   return (
-    <div className='container pb-20 pt-16'>
-      <div className='flex justify-between px-'>
+    <div className='container pb-20 pt-8'>
+      <div className='flex'>
+        <div className='mr-10 pt-1'>
+          <Socials />
+        </div>
         {/* <!-- left side contetn --> */}
-        <div className=''>
-          <SectionTag title="Hello, I'm" />
-          <h1 className='text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading'>
-            <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500'>
-              Hasan
-            </span>
-            <br />
-            <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap'>
-              Mahmud
-            </span>
-          </h1>
-          <div className='max-w-md'>
-            <p className='text-xl text-gray-600 mb-8 dark:text-slate-400'>
-              AstroWind is a production ready template to start your new website using Astro + Tailwind CSS. It has been
-              designed following Best Practices, SEO, Accessibility, <span className='inline sm:hidden'>...</span>
-              <span className='hidden sm:inline'>
-                Dark Mode, Great Page Speed, image optimization, sitemap generation and more.
-              </span>
+        <div className='mr-auto'>
+          <SectionTag uppercase={false} title="Hello, I'm" />
+          <div className='-ml-2 mt-3'>
+            <GradientText />
+          </div>
+          <div className='max-w-md mt-3 space-y-3'>
+            <p className=''>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
             </p>
           </div>
-          <div>{/* <GradientButton /> */}</div>
+          <div className='mt-12'>
+            <GradientBtn />
+          </div>
         </div>
         {/* <!-- right side image --> */}
         <div className=''>

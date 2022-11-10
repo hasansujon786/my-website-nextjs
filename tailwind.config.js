@@ -14,7 +14,7 @@ module.exports = {
         'darker-2': '#131316',
       },
       fontFamily: {
-        sans: ["'InterVariable'", ...defaultTheme.fontFamily.sans],
+        sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
       },
     },
   },

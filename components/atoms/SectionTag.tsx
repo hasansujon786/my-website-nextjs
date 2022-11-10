@@ -1,12 +1,13 @@
 interface Props {
   title: string
+  uppercase?: boolean
 }
 
-const SectionTag = (props: Props) => {
+const SectionTag = ({ title, uppercase = true }: Props) => {
   return (
-    <div className='flex justify-start items-center space-x-2 text-zinc-600'>
-      <span className='border-b-[3px] w-5 inline-block border-current'></span>
-      <p className='text-base uppercase font-bold'>{props.title}</p>
+    <div className='flex justify-start items-center space-x-2 text-zinc-500'>
+      <span className='border-b-[3px] w-4 inline-block border-current'></span>
+      <p className={`text-base font-bold ${uppercase && 'uppercase'}`}>{title}</p>
     </div>
   )
 }
