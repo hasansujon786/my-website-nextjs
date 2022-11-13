@@ -1,4 +1,4 @@
-import GradientBtn from '../atoms/GradientBtn'
+import Button from '../atoms/Button'
 import SectionTag from '../atoms/SectionTag'
 import Socials from './Socials'
 
@@ -34,8 +34,8 @@ const Hero = (props: {}) => {
               Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
             </p>
           </div>
-          <div className='mt-12'>
-            <GradientBtn />
+          <div className='mt-8 mb-2'>
+            <Button>Get resume</Button>
           </div>
         </div>
         {/* <!-- right side image --> */}

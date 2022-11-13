@@ -6,7 +6,7 @@ const Project = (props: {}) => {
   return (
     <div className='flex justify-between items-center py-24'>
       <section className=''>
-        <div className='max-w-xs space-y-5'>
+        <div className='max-w-xs space-y-4'>
           <SectionTag title='Project' />
           <div>
             <h1 className='text-5xl font-bold text-zinc-100'>App name</h1>

@@ -10,8 +10,8 @@ module.exports = {
       colors: {
         primary: colors.blue,
         secondary: colors.pink,
-        'darker-1': '#18181B',
-        'darker-2': '#131316',
+        'darker-1': '#0D0D15',
+        'darker-2': '#15151E',
       },
       fontFamily: {
         sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],

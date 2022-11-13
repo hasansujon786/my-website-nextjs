@@ -9,7 +9,7 @@ const ProjectLink = ({ href = '#', ...props }: Props) => {
   return (
     <a
       href={href}
-      className='inline-flex items-center space-x-2.5 text-sm text-zinc-300 decoration-zinc-500
+      className='inline-flex items-center space-x-2 text-sm text-zinc-300 decoration-zinc-500
       hover:text-yellow-500 hover:decoration-yellow-600
       underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200'
     >
