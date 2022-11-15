@@ -18,10 +18,11 @@ const Home: NextPage = () => {
         <Header />
         <Hero />
 
-        <div className='container divide-y divide-zinc-800 border-t-2 border-zinc-800'>
+        <div className='container divide-y-2 divide-zinc-800 border-y-2 border-zinc-800'>
           <Project />
           <Project />
         </div>
+
         <CallToAction />
         <Footer />
       </main>
@@ -30,6 +31,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-// import Image from 'next/image'
-// <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />

@@ -9,7 +9,7 @@ const Project = (props: {}) => {
         <div className='max-w-xs space-y-4'>
           <SectionTag title='Project' />
           <div>
-            <h1 className='text-5xl font-bold text-zinc-100'>App name</h1>
+            <h1 className='text-5xl font-bold text-white'>App name</h1>
             <p className='text-base text-zinc-600 mt-1'>UX/UI Design. App Development</p>
           </div>
           <p className=''>

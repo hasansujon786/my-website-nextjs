@@ -1,3 +1,4 @@
+import { FiDownload } from 'react-icons/fi'
 import Button from '../atoms/Button'
 import SectionTag from '../atoms/SectionTag'
 import Socials from './Socials'
@@ -34,14 +35,17 @@ const Hero = (props: {}) => {
               Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
             </p>
           </div>
-          <div className='mt-8 mb-2'>
-            <Button>Get resume</Button>
+          <div className='mt-8 mb-2 space-x-3 flex'>
+            <Button size='md' varient='solid-green' icon={<FiDownload />}>
+              Download CV
+            </Button>
+            {/* <Button varient='outlined' size='md' icon={<FiSend className='text-sm' />}> */}
+            {/*   Contact me */}
+            {/* </Button> */}
           </div>
         </div>
         {/* <!-- right side image --> */}
-        <div className=''>
-          <div className='w-72 aspect-square bg-red-200'></div>
-        </div>
+        <div className=''>{/* <div className='w-72 aspect-square bg-accent'></div> */}</div>
       </div>
     </div>
   )
