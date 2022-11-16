@@ -5,6 +5,7 @@ interface Props {
 }
 
 const ProjectLink = ({ href = '#', ...props }: Props) => {
+  // aria-label='Astrowind Github'
   return (
     <a
       href={href}

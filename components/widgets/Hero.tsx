@@ -23,7 +23,7 @@ const Hero = (props: {}) => {
         {/* <!-- left side contetn --> */}
         <div className='mr-auto'>
           <SectionTag uppercase={false} title="Hello, I'm" />
-          <div className='-ml-2 mt-3'>
+          <div className='-ml-1 mt-3'>
             <GradientText />
           </div>
           <div className='max-w-md mt-3 space-y-3'>
@@ -39,7 +39,7 @@ const Hero = (props: {}) => {
             <Button size='md' varient='solid-green' icon={<FiDownload />}>
               Download CV
             </Button>
-            {/* <Button varient='outlined' size='md' icon={<FiSend className='text-sm' />}> */}
+            {/* <Button size='md' varient='translusant' icon={<FiSend className='text-sm' />}> */}
             {/*   Contact me */}
             {/* </Button> */}
           </div>
