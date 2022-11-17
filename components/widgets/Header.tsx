@@ -23,7 +23,6 @@ const HeaderLink = (props: Props) => {
 const Header = (props: {}) => {
   return (
     <header
-      // className='sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-900 dark:md:bg-darker-1/80 md:backdrop-blur-sm border-b dark:border-b-0'
       className='sticky top-0 z-40 flex-none mx-auto w-full bg-transparent md:backdrop-blur-sm border-b dark:border-b-0'
       id='header'
     >

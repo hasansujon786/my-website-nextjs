@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
+        // sans: ["'Jost'", ...defaultTheme.fontFamily.sans],
       },
     },
   },

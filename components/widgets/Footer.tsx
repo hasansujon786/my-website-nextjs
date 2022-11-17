@@ -3,7 +3,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 const Footer = (props: {}) => {
   return (
     <div
-      className='py-8 px-12 flex flex-col gap-3 items-center justify-center
+      className='py-10 px-12 flex flex-col gap-3 items-center justify-center
       text-zinc-600 bg-darker-2 border-t border-t-zinc-800 border-opacity-50'
     >
       <div className='flex gap-6 text-xl'>

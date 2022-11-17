@@ -18,9 +18,11 @@ const Home: NextPage = () => {
         <Header />
         <Hero />
 
-        <div className='container divide-y-2 divide-zinc-800 border-y-2 border-zinc-800'>
-          <Project />
-          <Project />
+        <div className='container'>
+          <div className='divide-y-2 divide-zinc-800 border-y-2 border-zinc-800'>
+            <Project />
+            <Project />
+          </div>
         </div>
 
         <CallToAction />
