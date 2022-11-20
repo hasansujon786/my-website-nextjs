@@ -1,5 +1,5 @@
 const varients = {
-  // gradient: { bu: 'gradient-bg', sp: 'bg-darker-1 bg-opacity-95 group-hover:bg-opacity-80 transition-colors duration-300 ease-out', },
+  // gradient: { bu: 'gradient-bg', sp: 'bg-opacity-95 group-hover:bg-opacity-80 transition-colors duration-300 ease-out', },
   outlined: { bu: 'bg-transparent text-zinc-300 border-zinc-300 hover:bg-zinc-300 hover:text-black' },
   translusant: { bu: 'bg-[#282537] border-gray-700 hover:bg-gray-700/50 hover:border-gray-700' },
   solid: { bu: 'bg-black border-black hover:bg-gray-900 hover:border-gray-900' },

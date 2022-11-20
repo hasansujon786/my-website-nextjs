@@ -6,40 +6,35 @@ import Socials from './Socials'
 
 const GradientText = (props: {}) => {
   return (
-    <div className=''>
-      <h1 className='gradient-text text-8xl uppercase font-bold leading-[.80] tracking-tighter'>
-        Hasan <br /> Mahmud
-      </h1>
-    </div>
+    <h1 className='gradient-text text-8xl uppercase font-extrabold leading-[.77] tracking-[-0.06em]'>
+      Hasan <br /> Mahmud
+    </h1>
   )
 }
 
 const Hero = (props: {}) => {
   return (
-    <div className='container pb-20 pt-8'>
-      <div className='flex'>
+    <div className='container pb-16 pt-8'>
+      <div className='flex relative'>
+        <div className='absolute -bottom-16 -right-6 -translate-x-1/2'>
+          <ScrollDown />
+        </div>
+
         <div className='mr-10 pt-1'>
           <Socials />
         </div>
         {/* <!-- left side contetn --> */}
         <div className='mr-auto'>
           <SectionTag uppercase={false} title="Hello, I'm" />
-          <div className='-ml-1 mt-3'>
+          <div className='-ml-1.5 mt-3'>
             <GradientText />
           </div>
 
-          <div className='mt-1 mb-4'>
-            {/* <p className='text-xl font-bold tracking-wide text-accent'>Full Stack Developer</p> */}
+          <div className='mt-2 mb-4'>
             <p className='text-xl font-semibold tracking-wide text-accent'>Mobile Application + Web Developer</p>
-            {/* <ul className='dot-list text-sm flex space-x-2 fontsemibold tracking-wide'> */}
-            {/*   <li>Web Developer</li> */}
-            {/*   <li>Software Engineer</li> */}
-            {/*   <li>Programmer</li> */}
-            {/*   {/1* <li className='dot'>Software Engineer</li> *1/} */}
-            {/* </ul> */}
           </div>
 
-          <div className='max-w-md space-y-3 tracking-wide'>
+          <div className='max-w-md space-y-3 text-zinc-200 text-lg'>
             <p>A multidisciplinary developer with a passion for creating engaging, entertaining user experiences. ✨</p>
             {/* <p>Currently working as freelance developer.</p> */}
             <p>
@@ -56,11 +51,7 @@ const Hero = (props: {}) => {
           </div>
         </div>
         {/* <!-- right side image --> */}
-        <div className='relative'>
-          <div className='absolute -bottom-16 right-0'>
-            <ScrollDown />
-          </div>
-        </div>
+        <div className=''></div>
       </div>
     </div>
   )

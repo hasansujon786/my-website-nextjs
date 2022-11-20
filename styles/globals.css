@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .dot-list > li:not(:first-child) {
-    @apply  flex items-center before:relative before:h-1.5 before:w-1.5 before:mr-2 before:bg-accent before:rounded-full;
-  }
-}
 @layer utilities {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6;
   }
 }
 
+/* #6f6fe7 */
+:root {
+  --ground: #1f1d2b;
+  --accent: #05c391;
+  --glow-pink: #fb37ff;
+  --glow-cyan: #18b2de;
+}
+
 .gradient-text {
-  padding-right: 4px;
-  padding-bottom: 4px;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(
@@ -30,10 +31,7 @@
 .landingpage {
   margin: 0 auto;
   position: relative;
-  background-color: #1f1d2b;
-}
-.landingpage header {
-  background-color: rgb(31 29 43/ 0.8) !important;
+  background-color: var(--ground);
 }
 
 .landingpage::before {
@@ -44,8 +42,7 @@
   left: 60%;
   top: 210px;
   filter: blur(90px);
-  background-color: #fb37ff;
-  /* background-color: #6f6fe7; */
+  background-color: var(--glow-pink);
 }
 .landingpage::after {
   content: '';
@@ -54,7 +51,7 @@
   height: 123px;
   right: 5%;
   top: 550px;
-  background-color: #18b2de;
+  background-color: var(--glow-cyan);
   filter: blur(80px);
 }
 .cta-wrapper {
@@ -68,8 +65,7 @@
   right: 5%;
   top: -50px;
   filter: blur(110px);
-  background-color: #fb37ff;
-  /* background-color: #6f6fe7; */
+  background-color: var(--glow-pink);
 }
 .cta-wrapper::after {
   content: '';
@@ -78,11 +74,17 @@
   height: 123px;
   left: 5%;
   bottom: -50px;
-  background-color: #18b2de;
+  background-color: var(--glow-cyan);
   filter: blur(130px);
 }
 
 /* .cta-card-bg { */
 /*   background-image: linear-gradient(324deg, rgb(27 157 149) -20.32%, #6f6fe7 103.51%); */
 /*   background-image: linear-gradient(90deg, #06c5f9 0%, #05c391 100%); */
+/* } */
+
+/* @layer components { */
+/*   .dot-list > li:not(:first-child) { */
+/*     @apply flex items-center before:relative before:h-1.5 before:w-1.5 before:mr-2 before:bg-accent before:rounded-full; */
+/*   } */
 /* } */

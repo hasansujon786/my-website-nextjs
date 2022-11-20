@@ -11,7 +11,8 @@ const HeaderLink = (props: Props) => {
   return (
     <li>
       <a
-        className='text-sm font-semibold tracking-wide hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out'
+        className='text-sm font-semibold tracking-wide hover:text-accent-light
+        px-4 py-2 flex items-center transition duration-150 ease-in-out'
         href={props.path}
       >
         {props.children}
@@ -23,7 +24,7 @@ const HeaderLink = (props: Props) => {
 const Header = (props: {}) => {
   return (
     <header
-      className='sticky top-0 z-40 flex-none mx-auto w-full bg-transparent md:backdrop-blur-sm border-b dark:border-b-0'
+      className='sticky top-0 z-40 bg-ground/80 flex-none mx-auto w-full md:backdrop-blur-sm border-b dark:border-b-0'
       id='header'
     >
       <div className='container py-1'>
@@ -38,7 +39,7 @@ const Header = (props: {}) => {
             </div>
           </div>
           <nav
-            className='items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto'
+            className='items-center w-full md:w-auto hidden md:flex dark:text-slate-200 h-screen md:h-auto'
             aria-label='Main navigation'
           >
             <ul className='flex flex-col pt-8 md:pt-0 md:flex-row items-center md:self-center w-full md:w-auto text-xl md:text-base'>

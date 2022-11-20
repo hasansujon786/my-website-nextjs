@@ -7,7 +7,7 @@ const CallToAction = (props: {}) => {
       <div className='container my-16'>
         {/* <!-- card --> */}
         <div className='px-14 py-12 max-w-4xl mx-auto text-center rounded-3xl'>
-          <p className='text-xl uppercase font-bold tracking-wide text-accent'>Have a Project?</p>
+          <p className='text-xl uppercase font-extrabold tracking-wide text-accent'>Have a Project?</p>
           <h3 className='font-semibold text-7xl uppercase font mt-6 font-heading' style={{ lineHeight: 0.95 }}>
             LET‘S W🚀RK <br /> T_G_TH_R
           </h3>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors')
 
 module.exports = {
   darkMode: 'class',
@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
         accent: '#05c391',
         'accent-light': '#57DCB4',
         'accent-dark': '#00835B',
-        'darker-1': '#0D0D15',
-        'darker-2': '#15151E',
+        'level-100': '#15151E',
+        ground: '#1f1d2b',
+        // 'darker-1': '#0D0D15',
       },
       fontFamily: {
-        sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
+        sans: ["'Karla'", ...defaultTheme.fontFamily.sans],
+        // sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
         // sans: ["'Jost'", ...defaultTheme.fontFamily.sans],
       },
     },

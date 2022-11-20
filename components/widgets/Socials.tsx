@@ -14,9 +14,9 @@ const Socials = (props: {}) => {
           <FiTwitter />
         </a>
       </div>
-      <div className='border-l-[3px] h-32 mb-5 mt-auto border-current opacity-50'></div>
+      <div className='border-l-[3px] h-32 mb-5 mt-auto border-current opacity-40' />
       <p
-        className='cursor-default uppercase text-md font-bold italic tracking-widest rotate-180'
+        className='opacity-90 cursor-default uppercase font-extrabold italic tracking-widest rotate-180'
         style={{ writingMode: 'vertical-rl' }}
       >
         Follow Me
