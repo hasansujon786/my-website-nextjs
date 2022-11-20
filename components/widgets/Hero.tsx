@@ -2,6 +2,7 @@ import { FiDownload } from 'react-icons/fi'
 import Button from '../atoms/Button'
 import ScrollDown from '../atoms/ScrollDown'
 import SectionTag from '../atoms/SectionTag'
+import BongoCat from './BongoCat'
 import Socials from './Socials'
 
 const GradientText = (props: {}) => {
@@ -51,7 +52,11 @@ const Hero = (props: {}) => {
           </div>
         </div>
         {/* <!-- right side image --> */}
-        <div className=''></div>
+        <div className='w-1/2 order flex justify-center items-center'>
+          <div className='w-4/5 mt-28 mr-14'>
+            <BongoCat />
+          </div>
+        </div>
       </div>
     </div>
   )
