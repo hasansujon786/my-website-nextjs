@@ -4,9 +4,9 @@ import ProjectLink from '../atoms/ProjectLink'
 
 const Project = (props: {}) => {
   return (
-    <div className='flex justify-between items-center py-24'>
+    <div className='flex flex-col gap-8 lg:flex-row _justify-between _items-center py-24'>
       <section className=''>
-        <div className='max-w-xs space-y-4'>
+        <div className='w-4/5 lg:max-w-md space-y-4'>
           <SectionTag title='Project' />
           <div>
             <h2 className='text-5xl font-semibold text-white'>App name</h2>
@@ -21,14 +21,14 @@ const Project = (props: {}) => {
             <p className='text-base text-zinc-600'>typescript</p>
             <p className='text-base text-zinc-600'>express</p>
           </div>
-          <div className='pt-5 space-x-5'>
+          <div className='pt-5 flex gap-5'>
             <ProjectLink icon={<FiGithub />}>View Source</ProjectLink>
             <ProjectLink icon={<FiExternalLink />}>View on Play Store</ProjectLink>
           </div>
         </div>
       </section>
-      <section>
-        <div className='bg-level-100 h-96 aspect-video rounded-lg'></div>
+      <section className='flex-grow outline lg:flex justify-end'>
+        <div className='bg-level-100 w-full md:w-auto lg:h-96 aspect-video rounded-lg'></div>
       </section>
     </div>
   )

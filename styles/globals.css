@@ -6,6 +6,9 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6;
   }
+  .o {
+    outline-style: solid;
+  }
 }
 
 /* #6f6fe7 */
@@ -17,6 +20,7 @@
 }
 
 .gradient-text {
+  padding-right: 4px;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(

@@ -1,3 +1,5 @@
+import { TwCurrentScreenName } from '../widgets/utils'
+
 interface LayoutProps {
   children?: React.ReactNode
 }
@@ -17,6 +19,8 @@ const BaseLayout = (props: LayoutProps) => {
       {/* /> */}
       {/* <link href='https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap' rel='stylesheet' /> */}
       {props.children}
+
+      <TwCurrentScreenName />
     </div>
   )
 }
