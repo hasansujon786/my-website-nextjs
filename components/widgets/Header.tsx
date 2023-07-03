@@ -11,8 +11,8 @@ const HeaderLink = (props: Props) => {
   return (
     <li>
       <a
-        className='text-sm font-semibold tracking-wide hover:text-accent-light
-        px-4 py-2 flex items-center transition duration-150 ease-in-out'
+        className='flex items-center px-4 py-2
+        text-sm font-semibold tracking-wide transition duration-150 ease-in-out hover:text-accent-light'
         href={props.path}
       >
         {props.children}
@@ -24,11 +24,11 @@ const HeaderLink = (props: Props) => {
 const Header = (props: {}) => {
   return (
     <header
-      className='sticky top-0 z-40 bg-ground/80 flex-none mx-auto w-full md:backdrop-blur-sm border-b dark:border-b-0'
+      className='sticky top-0 z-40 mx-auto w-full flex-none border-b bg-ground/80 dark:border-b-0 md:backdrop-blur-sm'
       id='header'
     >
       <div className='container py-1'>
-        <div className='py-3 mx-auto w-full md:flex md:justify-between'>
+        <div className='mx-auto w-full py-3 md:flex md:justify-between'>
           <div className='flex justify-between'>
             <a className='flex items-center' href='#'>
               <Logo />
@@ -39,15 +39,15 @@ const Header = (props: {}) => {
             </div>
           </div>
           <nav
-            className='items-center w-full md:w-auto hidden md:flex dark:text-slate-200 h-screen md:h-auto'
+            className='hidden h-screen w-full items-center dark:text-slate-200 md:flex md:h-auto md:w-auto'
             aria-label='Main navigation'
           >
-            <ul className='flex flex-col pt-8 md:pt-0 md:flex-row items-center md:self-center w-full md:w-auto text-xl md:text-base'>
+            <ul className='flex w-full flex-col items-center pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base'>
               <HeaderLink path='#'>Projects</HeaderLink>
               <HeaderLink path='#'>Github</HeaderLink>
               <div className='ml-3 flex items-center gap-4'>
-                {/* <ToggleTheme /> */}
-                <Button varient='translusant' size='sm' icon={<FiSend className='text-xs' />}>
+                <ToggleTheme />
+                <Button varient='solid-green' size='sm' icon={<FiSend className='text-xs' />}>
                   Contact me
                 </Button>
               </div>

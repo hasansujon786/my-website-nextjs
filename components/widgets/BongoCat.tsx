@@ -1,9 +1,8 @@
 import { gsap } from 'gsap'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 
-const BongoCat = (props: {}) => {
-
-  useLayoutEffect(() => {
+const BongoCat = () => {
+  useEffect(() => {
     const ID = 'bongo-cat'
     const s = (selector: string) => `#${ID} ${selector}`
     const notes = document.querySelectorAll('.note')

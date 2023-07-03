@@ -9,8 +9,8 @@ const varients = {
 const sizes = {
   sm: { bu: 'px-5 py-2 text-sm' },
   base: { bu: 'px-6 py-2.5 text-base' },
-  md: { bu: 'px-7 py-3.5 text-base' },
-  lg: { bu: 'px-8 py-4 text-base' },
+  md: { bu: 'px-7 py-3 text-base' },
+  lg: { bu: 'px-9 py-3.5 text-base' },
 }
 
 interface Props {
@@ -23,9 +23,9 @@ interface Props {
 const Button = ({ children, varient = 'solid-green', size = 'base', icon }: Props) => {
   return (
     <button
-      className={`group inline-flex items-center space-x-2
-      border rounded-full font-semibold capitalize tracking-wide
-      transform ease-out transition-transform active:scale-95
+      className={`group inline-flex transform items-center
+      space-x-2 rounded-full border font-semibold capitalize
+      tracking-wide transition-transform ease-out active:scale-95
       ${varients[varient].bu} ${sizes[size].bu}`}
     >
       {icon && <span>{icon}</span>}
