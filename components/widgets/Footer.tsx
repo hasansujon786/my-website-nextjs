@@ -1,10 +1,10 @@
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
-const Footer = (props: {}) => {
+const Footer = () => {
   return (
     <div
-      className='py-10 px-12 flex flex-col gap-3 items-center justify-center
-      bg-level-100 border-t border-t-zinc-800 border-opacity-50'
+      className='flex flex-col items-center justify-center gap-3 border-t border-t-zinc-800
+      border-opacity-50 bg-level-100 py-10 px-12'
     >
       <div className='flex gap-6 text-xl text-zinc-600'>
         <a href='#'>
@@ -20,10 +20,10 @@ const Footer = (props: {}) => {
 
       <div
         className='flex items-center gap-3 text-zinc-700
-        before:relative before:border-b-2 before:w-4 before:border-current
-        after:relative after:border-b-2 after:w-4 after:border-current'
+        before:relative before:w-4 before:border-b-2 before:border-current
+        after:relative after:w-4 after:border-b-2 after:border-current'
       >
-        <p className='cursor-default text-zinc-600 text-xs uppercase font-extrabold tracking-widest'>Find me here</p>
+        <p className='cursor-default text-xs font-extrabold uppercase tracking-widest text-zinc-600'>Find me here</p>
       </div>
     </div>
   )
