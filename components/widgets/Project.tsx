@@ -4,8 +4,8 @@ import SectionTag from '../atoms/SectionTag'
 
 const Project = () => {
   return (
-    <div className='flex flex-col gap-8 py-12 md:flex-row md:py-24'>
-      <section className='w-full md:w-1/3'>
+    <div className='flex flex-col gap-8 py-12 lg:flex-row lg:py-24'>
+      <section className='w-full lg:w-1/3'>
         <div className='space-y-4'>
           <SectionTag title='Project' />
           <div>

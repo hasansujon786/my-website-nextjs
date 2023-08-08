@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const BaseLayout = (props: LayoutProps) => {
   return (
-    <div className='landingpage min-h-screen tracking-tight text-zinc-900 antialiased dark:text-zinc-300'>
+    <div className='landingpage min-h-screen tracking-tight text-zinc-900 antialiased dark:text-slate-200'>
       <link rel='preconnect' href='https://fonts.googleapis.com' />
       <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
       <link href='https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&display=swap' rel='stylesheet' />

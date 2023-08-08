@@ -6,11 +6,12 @@ import Project from '../components/widgets/Project'
 import CallToAction from '../components/widgets/CallToAction'
 import Footer from '../components/widgets/Footer'
 
+// TODO: wrap the bubbles inside container
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>HasanMahmud.dev | Softwere Developer</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 

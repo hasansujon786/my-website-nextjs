@@ -1,7 +1,9 @@
 import { gsap } from 'gsap'
 import { useEffect } from 'react'
+import { ProspWithClassName } from '../../lib/types'
+import { cn } from '../../lib/utils'
 
-const BongoCat = () => {
+const BongoCat = (props: ProspWithClassName) => {
   useEffect(() => {
     const ID = 'bongo-cat'
     const s = (selector: string) => `#${ID} ${selector}`
@@ -122,7 +124,7 @@ const BongoCat = () => {
     }
   }, [])
   return (
-    <div className='bongo-cat-wrapper'>
+    <div className={cn('bongo-cat-wrapper', props.className)}>
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 783.55 354.91'>
         <g id='bongo-cat'>
           <g className='head'>

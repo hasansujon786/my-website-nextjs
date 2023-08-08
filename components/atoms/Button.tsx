@@ -1,3 +1,5 @@
+import { cn } from '../../lib/utils'
+
 const varients = {
   // gradient: { bu: 'gradient-bg', sp: 'bg-opacity-95 group-hover:bg-opacity-80 transition-colors duration-300 ease-out', },
   outlined: { bu: 'bg-transparent text-zinc-300 border-zinc-300 hover:bg-zinc-300 hover:text-black' },
@@ -18,15 +20,18 @@ interface Props {
   icon?: React.ReactNode
   varient?: keyof typeof varients
   size?: keyof typeof sizes
+  className?: string
 }
 
-const Button = ({ children, varient = 'solid-green', size = 'base', icon }: Props) => {
+const Button = ({ children, varient = 'solid-green', size = 'base', icon, ...props }: Props) => {
   return (
     <button
-      className={`group inline-flex transform items-center
-      space-x-2 rounded-full border font-semibold capitalize
-      tracking-wide transition-transform ease-out active:scale-95
-      ${varients[varient].bu} ${sizes[size].bu}`}
+      className={cn(
+        `group inline-flex transform items-center space-x-2 rounded-full border font-semibold capitalize tracking-wide transition-transform ease-out active:scale-95`,
+        varients[varient].bu,
+        sizes[size].bu,
+        props.className
+      )}
     >
       {icon && <span>{icon}</span>}
       <span>{children}</span>

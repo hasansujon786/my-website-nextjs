@@ -47,7 +47,7 @@ const Header = (props: {}) => {
               <HeaderLink path='#'>Github</HeaderLink>
               <div className='ml-3 flex items-center gap-4'>
                 <ToggleTheme />
-                <Button varient='solid-green' size='sm' icon={<FiSend className='text-xs' />}>
+                <Button varient='translusant' size='sm' icon={<FiSend className='text-xs' />}>
                   Contact me
                 </Button>
               </div>
